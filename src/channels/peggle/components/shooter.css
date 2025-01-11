@@ -1,0 +1,24 @@
+.shooter {
+  position: relative;
+  width: 134px;
+  height: 103px;
+  background-position: bottom;
+  background-image: url('../assets/sprites/shooter-back.png');
+}
+.canon {
+  position: absolute;
+  width: 78px;
+  height: 57px;
+  background-image: url('../assets/sprites/shooter-front.png');
+  top: 75px;
+  transform-origin: 50% -40px;
+}
+.stage-0 {
+  background-position: 0px -112px;
+}
+.stage-1 {
+  background-position: 0px -56px;
+}
+.stage-2 {
+  background-position: 0px 0px;
+}

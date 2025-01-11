@@ -1,0 +1,88 @@
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#peggle-container {
+    overflow: hidden;
+    width: 1092px;
+    hieght: 332px; 
+}
+
+#matter-canvas {
+    z-index: 3; /* Base canvas for Matter.js */
+}
+
+#overlay-canvas {
+    z-index: 5; /* Top canvas for custom rendering */
+    pointer-events: none; /* Ensure clicks pass through */
+}
+
+#underlay-canvas {
+    z-index: 1; /* Top canvas for custom rendering */
+    pointer-events: none; /* Ensure clicks pass through */
+}
+
+.backdrop {
+    position: absolute;
+    top: 0px;
+    left: 111px;
+    pointer-events: none; /* Ensure clicks pass through */
+}
+
+.shooter-parent {
+    position: absolute;
+    left: 479px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Define the font sprite sheet */
+.font-sprite {
+    display: inline-block;
+    width: 20px; /* Adjust as needed for spacing */
+    margin-right: -5px;
+    height: 47px; /* Uniform height from RectList */
+    background-image: url('./assets/sprites/score-text.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* Character classes */
+.char-0 {
+    background-position: 0px 0px;
+}
+.char-1 {
+    background-position: -24px 0px;
+}
+.char-2 {
+    background-position: -43px 0px;
+}
+.char-3 {
+    background-position: -67px 0px;
+}
+.char-4 {
+    background-position: -92px 0px;
+}
+.char-5 {
+    background-position: -115px 0px;
+}
+.char-6 {
+    background-position: -139px 0px;
+}
+.char-7 {
+    background-position: -163px 0px;
+}
+.char-8 {
+    background-position: -187px 0px;
+}
+.char-9 {
+    background-position: -212px 0px;
+}
+.char-comma {
+    background-position: -236px 0px;
+    margin-left: -5px;
+    width: 12px;
+}

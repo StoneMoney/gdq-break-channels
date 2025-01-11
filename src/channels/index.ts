@@ -1,5 +1,6 @@
 import './channels';
 
+import './peggle';
 import './template';
 import './breakout';
 import './cave-story';
